@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            background-image: url(web\ bg.jpg);
+        }
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #98a045;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            width: 100%;
+            gap: 50px;
+            font-size: 30px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10px;
+            width: 100%;
+            background-color: white;
+            background-image: none;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Screenshot 2024-07-28 230518.png" alt="" height="50" width="50" style="border-radius: 50%;">
+            <h1>RS CART</h1>
+        </div>
+    </header>
+
+<div class="container">
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile number">mobile number:</label>
+            <input type="tel" id="mobile number" name="mobile number" required="">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="pass" required="">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Register">
+        </div>
+        <div class="form-group">
+            <center>
+            Already have an account      <a href="login.html">login</a>
+            </center>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

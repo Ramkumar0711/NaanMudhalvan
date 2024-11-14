@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>RS CART</title>
+</head>
+<style>*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.logo{
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.search input{
+    height: 30px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: rgb(166, 166, 166);
+    border-radius: 30px;;                                                                                                                                                                                                                                                                                                                                                                                                                                            der-radius: 10px;
+}
+.search span{
+    position:absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+    color: grey;
+}
+::placeholder{
+    font-size: 18px;
+    padding-left: 30px;
+    color: grey;
+}
+body{
+    background-color: rgb(166, 165, 165);
+
+}
+.menu{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    margin-top: 2px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu ul li{
+    font-size: 20px;
+    font: bold;
+    list-style: none;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+    background-color: red;
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+.lap{
+    background-color: rgb(252, 251, 253);
+    height: 350px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.star{
+    color: gold;
+    font-size: 20px;
+}
+.lap-cont button{
+    border: none;
+    outline: none;
+    width: 160px;
+    height: 30px;
+    background-color: gold;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 0 0 8px rgb(86, 86, 86);
+}
+.lap-cont button:active{
+    transform: scale(0.9);
+}
+.container,.laptopwarp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.laptopwarp{
+    flex-direction: column;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Screenshot 2024-07-28 230518.png" alt="check" height="50" width="50" style="border-radius: 50%;">
+            <h1>RS CART</h1>
+        </div>
+        <div class="search">
+            <span><i class="bx bx-search"></i></span>
+            <input type="search" placeholder="tshirt,shoe or search anything">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./login.html"><i class="bx bx-user"></i>CUSTOMER</a></li>
+                <li><i class='bx bx-dots-vertical'></i></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <hr>
+    <div class="menu">
+        <ul>
+            <li>shoe</li>
+            <li>menswear</li>
+            <li>watch</li>
+            <li>toys</li>
+            <li>electronics</li>
+            <li>laptop</li>
+            <li>mobile</li>
+        </ul>
+    </div>
+    <div class="main">
+        <img src="./LAP.jpg" alt="img" height="500px" width="1320">
+        <img src="./LAP.jpg" alt="img" height="500px" width="1320">
+        <img src="./LAP.jpg" alt="img" height="500px" width="1320">
+    </div>
+    <div class="products">
+        <div class="cont" style="text-align: center;">
+            <h1>PRODUCTS</h1>
+        </div>
+        <div class="laptopwarp">
+        <div class="container">
+        <div class="lap">
+            <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+            <div class="lap-cont">
+                <h2 style="text-align: center;">ASUS</h2>
+                <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                <div class="star">5
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                </div>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="lap">
+            <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+            <div class="lap-cont">
+                <h2 style="text-align: center;">ASUS</h2>
+                <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                <div class="star">5
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                </div>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        </div>    
+        <div class="container">
+            <div class="lap">
+                <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+                <div class="lap-cont">
+                    <h2 style="text-align: center;">ASUS</h2>
+                    <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                    <div class="star">5
+                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                    </div>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="lap">
+                <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+                <div class="lap-cont">
+                    <h2 style="text-align: center;">ASUS</h2>
+                    <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                    <div class="star">5
+                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                    </div>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+            <div class="laptopwarp">
+        <div class="container">
+        <div class="lap">
+            <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+            <div class="lap-cont">
+                <h2 style="text-align: center;">ASUS</h2>
+                <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                <div class="star">5
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                </div>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        <div class="lap">
+            <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+            <div class="lap-cont">
+                <h2 style="text-align: center;">ASUS</h2>
+                <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                <div class="star">5
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                </div>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+        </div>    
+        <div class="container">
+            <div class="lap">
+                <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+                <div class="lap-cont">
+                    <h2 style="text-align: center;">ASUS</h2>
+                    <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                    <div class="star">5
+                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                    </div>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="lap">
+                <div class="lapimg"><img src="./LAP.jpg" height="130" width="200" style="border-radius: 10px 10px 0 0;" ></div>
+                <div class="lap-cont">
+                    <h2 style="text-align: center;">ASUS</h2>
+                    <p><i class="bx bx-rupee"></i> 60,000 <span>M.R.P <s>80,000</s></span></p>
+                    <div class="star">5
+                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                    </div>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+    </div>
+</body>
+</html>
